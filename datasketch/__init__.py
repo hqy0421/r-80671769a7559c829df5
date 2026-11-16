@@ -11,6 +11,14 @@ from datasketch.aio import AsyncMinHashLSH  # Instantiation requires motor/redis
 from datasketch.b_bit_minhash import bBitMinHash
 from datasketch.hashfunc import sha1_hash32, sha1_hash64
 from datasketch.hnsw import HNSW
+from datasketch.hnsw_neighbor_features import (
+    NeighborFeatures,
+    PredictionRow,
+    ReferenceRecord,
+    TargetEvent,
+    TargetEventType,
+    construct_hnsw_neighbor_features,
+)
 from datasketch.hyperloglog import HyperLogLog, HyperLogLogPlusPlus
 from datasketch.lean_minhash import LeanMinHash
 from datasketch.lsh import MinHashLSH
@@ -35,11 +43,17 @@ __all__ = [
     "MinHashLSHBloom",
     "MinHashLSHEnsemble",
     "MinHashLSHForest",
+    "NeighborFeatures",
+    "PredictionRow",
+    "ReferenceRecord",
+    "TargetEvent",
+    "TargetEventType",
     "WeightedMinHash",
     "WeightedMinHashGenerator",
     "WeightedMinHashLSH",
     "WeightedMinHashLSHForest",
     "bBitMinHash",
+    "construct_hnsw_neighbor_features",
     "sha1_hash32",
     "sha1_hash64",
 ]

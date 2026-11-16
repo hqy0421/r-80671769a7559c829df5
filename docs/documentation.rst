@@ -91,3 +91,11 @@ HNSW
 .. autoclass:: datasketch.HNSW
     :members:
     :special-members:
+
+
+HNSW Neighbor Features
+----------------------
+
+.. automodule:: datasketch.hnsw_neighbor_features
+    :members:
+    :special-members:
